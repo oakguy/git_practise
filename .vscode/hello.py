@@ -1,13 +1,12 @@
 #Write your function here
-def double_index(lst, index):
-  if index >= len(lst):
-    return lst
-  else:
-    new_lst = lst[0:index] #sliced here
-    new_lst.append(lst[index]*2) #inserted new value
-    print(lst[index+1:])
-    new_lst = new_lst + lst[index+1:] #added the remainder of the list
-    return new_lst
-
-#Uncomment the line below when your function is done
-print(double_index([3, 8, -10, 12], 2))
+def reversed_list(lst1, lst2):
+      #return True is lst1 is the same as lst2 reveresed
+      #else return False
+      #print(lst2 = sorted(lst2))
+      if sorted(lst2) == lst1:
+            return True
+      else:
+            return False
+#Uncomment the lines below when your function is done
+print(reversed_list([1, 2, 3], [3, 2, 1]))
+print(reversed_list([1, 5, 3], [3, 2, 1]))
